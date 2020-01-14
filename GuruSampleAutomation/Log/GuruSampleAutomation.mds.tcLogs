@@ -77,42 +77,6 @@
 			</Node>
 			<Node name="log idx=0006">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43844.5692775463"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{98959230-64C3-4EA3-8511-7F6C4D661898}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Unit1\DeleteCustomer]"/>
-				<Prp name="relpath" type="S" value="14-01-2020_13_39_45_580\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0007">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43844.5808181944"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0692090F-7C4F-41E8-B667-834F7B32D125}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Unit1\DeleteCustomer]"/>
-				<Prp name="relpath" type="S" value="14-01-2020_13_56_22_693\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0008">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43844.5879807523"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{6575B826-3098-431C-88C9-BEA4CC48CDD1}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Unit1\DeleteCustomer]"/>
-				<Prp name="relpath" type="S" value="14-01-2020_14_06_41_537\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0009">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43844.5907019792"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{29EEB2D2-DEA9-4D4B-AF8B-39AD321522BD}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Unit1\DeleteCustomer]"/>
-				<Prp name="relpath" type="S" value="14-01-2020_14_10_36_651\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0010">
-				<Prp name="caption" type="S" value=""/>
 				<Prp name="datetime" type="D" value="43844.5921984954"/>
 				<Prp name="description" type="S" value=""/>
 				<Prp name="key" type="S" value="{A803A2B0-26D1-4B9A-9F0A-29E3D655E4B5}"/>
