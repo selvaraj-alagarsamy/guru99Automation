@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="name" type="S" value="Login [KeywordTests - Login]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.4479951157"/>
+				<Prp name="details" type="S" value="{E44433ED-E596-45FD-8D41-C14CD11D64F7}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="end time" type="D" value="43844.4481713657"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="name" type="S" value="AddNewCustomer [KeywordTests - AddNewCustomer]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.4481713773"/>
+				<Prp name="details" type="S" value="{D85722AD-C311-44EA-B8F2-A0DDDEFF47F2}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="end time" type="D" value="43844.4483162616"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="name" type="S" value="Logout [KeywordTests - Logout]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.4483163773"/>
+				<Prp name="details" type="S" value="{E878EE72-A8D8-4865-B2CF-B1233B0AA516}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="end time" type="D" value="43844.4483865856"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

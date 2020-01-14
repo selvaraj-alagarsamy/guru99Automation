@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="14.0">
+	<children>
+		<child name="Test1" key="{29C60B52-2CFD-4AEE-97EA-753E8C3F1150}" path="Test1.tcKDTest" />
+		<child name="Login" key="{D418282A-1EA4-4912-8782-A35E68755DE9}" path="Login.tcKDTest" />
+		<child name="AddNewCustomer" key="{1A7A76BE-15F3-4A85-AB9A-ECDDC8F1909C}" path="AddNewCustomer.tcKDTest" />
+		<child name="Logout" key="{5B72F82E-D6CE-4112-AB1B-78BF1E4E3BA8}" path="Logout.tcKDTest" />
+		<child name="DeleteCustomer" key="{1410AC57-6889-4D32-849D-7EDC5B9AB13D}" path="DeleteCustomer.tcKDTest" />
+	</children>
+</Root>

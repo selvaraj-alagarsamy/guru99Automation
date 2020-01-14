@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="starttime" type="D" value="43844.445106875"/>
+						<Prp name="name" type="S" value="AddNewCustomer"/>
+						<Prp name="duration" type="I" value="13267"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="13267"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGAEEAQgAxAEIANABBAEEALQBDAEQARgA5AC0ANAAxAEMAMAAtADgAQQA2ADgALQBGADQAQgBDAEMAQwA2ADMAMQA1AEYANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+				</Node>
+				<Prp name="starttime" type="D" value="43844.445106875"/>
+				<Prp name="name" type="S" value="GuruSampleAutomation"/>
+				<Prp name="duration" type="I" value="13267"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="user" type="S" value="THI1910536"/>
+		<Prp name="tests" type="I" value="1"/>
+		<Prp name="host" type="S" value="THSLT10156"/>
+		<Prp name="name" type="S" value="Guru99"/>
+		<Prp name="stop" type="D" value="43844.4453363773"/>
+		<Prp name="testname" type="S" value="GuruSampleAutomation"/>
+		<Prp name="starttime" type="D" value="43844.4449352662"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{533C4E2F-69A9-4FC3-BC31-1A042B5BD05A}"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+	</Node>
+</Nodes>

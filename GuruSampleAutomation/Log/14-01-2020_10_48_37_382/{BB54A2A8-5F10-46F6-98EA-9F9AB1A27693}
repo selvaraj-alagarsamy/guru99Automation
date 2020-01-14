@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row0">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.4504328472"/>
+				<Prp name="name" type="S" value="Login [KeywordTests - Login]"/>
+				<Prp name="end time" type="D" value="43844.450939213"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="details" type="S" value="{BDA5B529-BF51-47CC-9AFF-4A650A3206C4}"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.450939213"/>
+				<Prp name="name" type="S" value="AddNewCustomer [KeywordTests - AddNewCustomer]"/>
+				<Prp name="end time" type="D" value="43844.4510862963"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="details" type="S" value="{D7E94E9D-86F1-4CD9-8371-E3223E2D74B4}"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="43844.4510864236"/>
+				<Prp name="name" type="S" value="Logout [KeywordTests - Logout]"/>
+				<Prp name="end time" type="D" value="43844.451171713"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value="{846CA9DA-4DB5-4E5E-BB71-DDC7FBFEB2C9}"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

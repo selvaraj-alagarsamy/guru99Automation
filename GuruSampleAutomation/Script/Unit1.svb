@@ -1,0 +1,10 @@
+﻿
+
+Sub DeleteCustomer()
+  Call Aliases.browser.page.FindChildByXPath("(//a[contains(.,'Delete Customer')])[2]").Click()
+  Delay(5000)
+  Call Aliases.browser.page.FindChildByXPath("//input[@name='cusid']").SetText("45166")
+  Call Aliases.browser.page.FindChildByXPath("//input[@value='Submit']").Click()
+  Call Aliases.browser.page.Confirm.Button("OK").Click()
+   
+End Sub

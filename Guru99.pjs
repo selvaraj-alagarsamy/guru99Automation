@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{0A32241F-6EFA-4F32-9865-2C41583AC730}">
+	<children>
+		<child name="GuruSampleAutomation" key="{62D9E26D-CDD2-4D0F-8582-E4F7272A1183}" path="GuruSampleAutomation\GuruSampleAutomation.mds" />
+	</children>
+	<testItems key="{8AD35E22-27B1-4FB9-985C-6A94341F0826}">
+		<children>
+			<testItem key="{62D9E26D-CDD2-4D0F-8582-E4F7272A1183}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{C388878F-3E8E-4FC7-ABCF-D6FD4D331C5D}">
+		<data Version="3">
+			<Items>
+				<Variable Name="CustomerID" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<analysis key="{D303E179-05ED-42CA-85DB-377962A968F4}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

@@ -1,0 +1,62 @@
+﻿
+Sub Test1()
+
+  Dim cusid, accid, RowNum,ColumnNum
+  cusid = ""
+  accid = ""
+  RowNum = 2
+  ColumnNum = 10
+  set Excel = CreateObject("Excel.Application")
+  set book = Excel.Workbooks.Open("C:\Users\THI1910536\Documents\Book2.xlsx")
+  set sheet = book.Sheets.Item("Sheet1")
+  Call Browsers.Item(btChrome).Run("http://www.demo.guru99.com/V4/index.php")
+  Call Aliases.browser.pageGuru99BankHomePage.formFrmlogin.textboxUid.SetText("mngr241411")
+  Call Aliases.browser.pageGuru99BankHomePage.formFrmlogin.passwordboxPassword.SetText("ArebUju")
+  Call Aliases.browser.pageGuru99BankHomePage.formFrmlogin.submitbuttonLogin.ClickButton
+  Call Aliases.browser.pageGuru99BankHomePage.Wait
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankManagerHomepage.cell, "contentText", cmpEqual, "Manger Id : mngr241411")
+  'Call Project.Variables.Var1.Reset
+  
+  While (RowNum <= sheet.UsedRange.Rows.Count)
+    Call Aliases.browser.pageGuru99BankManagerHomepage.link.Click
+  Call Aliases.browser.pageAddcustomerpage.Wait
+  Call Aliases.browser.pageAddcustomerpage.textboxName.SetText(sheet.Cells(RowNum, 1).Value)
+  Call Aliases.browser.pageAddcustomerpage.dateinputDob.Keys(sheet.Cells(RowNum, 2).Value)
+  Call Aliases.browser.pageAddcustomerpage.textareaAddr.Keys(sheet.Cells(RowNum, 3).Value)
+  Call Aliases.browser.pageAddcustomerpage.textboxCity2.SetText(sheet.Cells(RowNum, 4).Value)
+  Call Aliases.browser.pageAddcustomerpage.textboxState2.SetText(sheet.Cells(RowNum, 5).Value)
+  Call Aliases.browser.pageAddcustomerpage.textboxPinno2.SetText(sheet.Cells(RowNum, 6).Value)
+  Call Aliases.browser.pageAddcustomerpage.textboxTelephoneno2.SetText(sheet.Cells(RowNum, 7).Value)
+  Call Aliases.browser.pageAddcustomerpage.textboxEmailid.SetText(sheet.Cells(RowNum, 8).Value)
+  Call Aliases.browser.pageAddcustomerpage.passwordboxPassword2.SetText(sheet.Cells(RowNum, 9).Value)
+  Call Aliases.browser.pageAddcustomerpage.submitbuttonSubmit.ClickButton
+  Call Aliases.browser.pageCustomerregmsg.Wait
+  Call aqObject.CheckProperty(Aliases.browser.pageCustomerregmsg.textnode, "contentText", cmpEqual, "Customer Registered Successfully!!!")
+  cusid = Aliases.browser.pageCustomerregmsg.cell2.contentText
+  Call Log.Message("", cusid)
+  
+  sheet.Cells(RowNum, 10).Value = cusid
+ 
+  book.Save()
+  Log.Message(sheet.Cells(RowNum, ColumnNum).Value)
+   RowNum = RowNum + 1
+  'Project.Variables.Var1.Value("cusid") = cusid
+    'Call Project.Variables.Var1.Next
+  WEnd
+  
+'  Call Aliases.browser.pageCustomerregmsg.link.Click
+'  Call Aliases.browser.pageAddaccount.Wait
+'  Call Aliases.browser.pageAddaccount.textboxCusid.SetText(cusid)
+'  Call Aliases.browser.pageAddaccount.textboxInideposit.SetText("2000")
+'  Call Aliases.browser.pageAddaccount.submitbuttonSubmit.ClickButton
+'  Call Aliases.browser.pageAcccreatemsg.Wait
+'  Call aqObject.CheckProperty(Aliases.browser.pageAcccreatemsg.textnode, "contentText", cmpEqual, "Account Generated Successfully!!!")
+'  accid = Aliases.browser.pageAcccreatemsg.cell2.contentText
+'  'Call aqObject.CheckProperty(Aliases.browser.pageAcccreatemsg.cell2, "contentText", cmpEqual, "75005")
+'  Call Log.Message("", accid)
+  Call Aliases.browser.pageAcccreatemsg.link.Click
+  'Call Aliases.browser.pageLogout.Wait
+  Call Aliases.browser.pageLogout.Alert.buttonOk.ClickButton
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankHomePage.formFrmlogin.submitbuttonLogin, "Enabled", cmpEqual, True)
+  Call aqObject.CheckProperty(Aliases.browser.pageGuru99BankHomePage.formFrmlogin.submitbuttonLogin, "value", cmpEqual, "LOGIN")
+End Sub

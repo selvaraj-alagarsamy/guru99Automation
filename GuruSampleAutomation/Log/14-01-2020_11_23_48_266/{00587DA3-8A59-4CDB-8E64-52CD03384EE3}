@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="Login [KeywordTests - Login]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="43844.4750562847"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="43844.4748678009"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="details" type="S" value="{007DECB5-26E3-4BDE-A7F2-0ABF63440551}"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="AddNewCustomer [KeywordTests - AddNewCustomer]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="43844.4752143171"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="43844.4750562847"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="details" type="S" value="{E3614532-A5B2-479D-B1F9-B109808992EC}"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="Logout [KeywordTests - Logout]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="43844.4752891898"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="43844.475214456"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value="{FCDC1837-CB37-4A7D-B30A-CA85D21E1A33}"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>
